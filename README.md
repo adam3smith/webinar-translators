@@ -1,4 +1,4 @@
-webinar-translators
+PLoS Webinar "Writing Zotero Translators"
 ===================
 
-Materials and discussion for webinar on Zotero translators
+This repository will contain links and materials and will serve as a platform for discussions for the PLoS Webinar on writing Zotero translators, Nov. 3 & Nov. 10, 2014. 
