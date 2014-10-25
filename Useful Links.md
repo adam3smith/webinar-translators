@@ -29,13 +29,13 @@ Documentation for Zotero translators code is [here](https://www.zotero.org/suppo
 Documentation for using Eric Hetzner's Framework is [here](https://www.zotero.org/support/dev/translators/framework).
 
 ##Examples
-**Framework Translator**: [Boston Review](https://github.com/zotero/translators/blob/master/Boston%20Review.js)
-**Non-framework Screen Scraper**: [USPTO](https://github.com/zotero/translators/blob/master/Patents%20-%20USPTO.js)
-**Fetch Metadata using GET**" [FigShare](https://github.com/zotero/translators/blob/master/Figshare.js)
-**Fetch Metadata using POST**: [HAPI](https://github.com/zotero/translators/blob/master/Hispanic-American%20Periodical%20Index%20%28Beta%29.js)
-**Rely on Embedded Metadata**: [Institute of Physics](https://github.com/zotero/translators/blob/master/Institute%20of%20Physics.js)
-**Retrieve custom JSON format from API and import**: [DPLA](https://github.com/zotero/translators/blob/master/DPLA.js)
-**Import Translator**: [MARCXML](https://github.com/zotero/translators/blob/master/MARCXML.js) (Import translators are very ideosyncratic depending on the import format. This one is particularly simple to show the general structure).
+- **Framework Translator**: [Boston Review](https://github.com/zotero/translators/blob/master/Boston%20Review.js)
+- **Non-framework Screen Scraper**: [USPTO](https://github.com/zotero/translators/blob/master/Patents%20-%20USPTO.js)
+- **Fetch Metadata using GET**" [FigShare](https://github.com/zotero/translators/blob/master/Figshare.js)
+- **Fetch Metadata using POST**: [HAPI](https://github.com/zotero/translators/blob/master/Hispanic-American%20Periodical%20Index%20%28Beta%29.js)
+- **Rely on Embedded Metadata**: [Institute of Physics](https://github.com/zotero/translators/blob/master/Institute%20of%20Physics.js)
+- **Retrieve custom JSON format from API and import**: [DPLA](https://github.com/zotero/translators/blob/master/DPLA.js)
+- **Import Translator**: [MARCXML](https://github.com/zotero/translators/blob/master/MARCXML.js) (Import translators are very ideosyncratic depending on the import format. This one is particularly simple to show the general structure).
 
 
 
