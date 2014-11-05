@@ -29,6 +29,8 @@ Documentation for Zotero translators code is [here](https://www.zotero.org/suppo
 Documentation for using Eric Hetzner's Framework is [here](https://www.zotero.org/support/dev/translators/framework).
 
 ##Examples
+- **From the webinar**: [Demographic Research](https://github.com/zotero/translators/blob/master/Demographic%20Research.js) (GET with RIS)
+
 - **Framework Translator**: [Boston Review](https://github.com/zotero/translators/blob/master/Boston%20Review.js)
 - **Non-framework Screen Scraper**: [USPTO](https://github.com/zotero/translators/blob/master/Patents%20-%20USPTO.js)
 - **Fetch Metadata using GET**" [FigShare](https://github.com/zotero/translators/blob/master/Figshare.js)
