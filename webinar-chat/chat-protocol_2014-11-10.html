@@ -1,0 +1,188 @@
+<html><head><style type="text/css"><meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+body 
+{
+    margin: 6px;
+    
+    max-width: 100%; /* fix our max width to 100% of our containing frame */
+    word-wrap: break-word; /* ok to break words if text wrap is needed */
+    
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    
+    font-family: arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+    
+    line-height: 2px;
+}
+
+.msg_entry 
+{
+	display: block;
+	font-size: 14px;
+	margin-bottom: 6px;
+	
+	/* webkit extension for rounded boxes, ok if it doesn't work */
+	-webkit-border-radius: 3px;
+	
+	/* gecko extension for rounded boxes, ok if it doesn't work */
+	-moz-border-radius: 3px;
+	
+	/* CCS3 rounded boxes, ok if it doesn't work */
+	border-radius: 3px;
+	
+	border-width: 1px;
+	border-style: solid;
+    
+    margin: 0px 0px;
+	
+	/* webkit extension for shadows, ok if it doesn't work */
+	-webkit-box-shadow: rgba(0, 0, 0, .5) 0px 1px 2px;
+}
+
+.msg_entry h1 
+{
+	/* webkit extension for rounded boxes, ok if it doesn't work */
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    
+    /* gecko extension for rounded boxes, ok if it doesn't work */
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    
+    /* CCS3 rounded boxes, ok if it doesn't work */
+    -border-bottom-right-radius: 0px;
+    -border-bottom-left-radius: 0px;
+
+    background-color: transparent;
+    
+    margin: 2px 0px;
+    padding: 0px 6px;
+    line-height: 100%;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+.msg_entry p 
+{
+	/* webkit extension for rounded boxes */
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;
+    
+    /* gecko extension for rounded boxes */
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-topleft: 0px;
+    
+    /* CCS3 rounded boxes */
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    
+    background-color: rgb(255, 255, 255); /* for those that don't yet support rgba make sure we are at least white */
+    background-color: rgba(255, 255, 255, 0.75); /* translucent white so we get the tint of our background */
+    
+    padding: 2px 6px;
+    margin: 0px 0px;
+    line-height: 100%;
+}
+
+.msg_entry.chat.welcome, .msg_entry.chat.message
+{
+	background-color: rgb(217, 240, 211);   /* light green */
+	border-color: rgb(217, 240, 211);       /* light green */
+}
+
+.msg_entry.chat.welcome p, .msg_entry.chat.message p
+{
+    background-color: transparent;
+}
+
+.msg_entry.chat.incoming, .msg_entry.chat.outgoing
+{
+	background-color: rgb(216, 237, 254);   /* light blue */
+	border-color: rgb(216, 237, 254);       /* light blue */
+}
+
+.msg_entry.chat.incoming h1, .msg_entry.chat.outgoing h1
+{
+	color: rgb(2, 101, 203);                /* blue */
+}
+
+.msg_entry.chat.incoming.to_all, .msg_entry.chat.outgoing.to_all
+{
+	background-color: rgb(217, 240, 211);   /* light green */
+	border-color: rgb(217, 240, 211);       /* light green */
+}
+
+.msg_entry.chat.incoming.to_all h1, .msg_entry.chat.outgoing.to_all h1
+{
+	color: rgb(0, 102, 2);                  /* green */
+}
+
+.msg_entry.chat.incoming.private, .msg_entry.chat.outgoing.private 
+{
+	background-color: rgb(254, 208, 208);   /* light red */
+	border-color: rgb(254, 208, 208);       /* light red */
+}
+
+.msg_entry.chat.incoming.private h1, .msg_entry.chat.outgoing.private h1 
+{
+	color: rgb(153, 1, 0);                  /* red */
+}
+
+.msg_entry.questionanswer.remote
+{
+	background-color: rgb(217, 240, 211);   /* light green */
+	border-color: rgb(217, 240, 211);       /* light green */
+}
+
+.msg_entry.questionanswer.remote label
+{
+    color: rgb(0, 102, 2);                  /* green */
+    text-align: right;
+}
+
+.msg_entry.questionanswer.remote h1
+{
+    color: rgb(0, 102, 2);                  /* green */
+}
+
+.msg_entry.questionanswer.local.public
+{
+	background-color: rgb(216, 237, 255);   /* light blue */
+	border-color: rgb(216, 237, 255);       /* light blue */
+}
+
+.msg_entry.questionanswer.local.public label
+{
+    color: rgb(2, 101, 203);                /* blue */
+}
+
+.msg_entry.questionanswer.local.private
+{
+	background-color: rgb(254, 208, 208);   /* light red */
+	border-color: rgb(254, 208, 208);       /* light red */
+}
+
+.msg_entry.questionanswer.local.private label
+{
+    color: rgb(153, 1, 0);                  /* red */
+}
+
+.msg_entry.questionanswer.local.noanswer
+{
+    background-color: rgb(238, 238, 238);   /* light gray */
+    border-color: rgb(238, 238, 238);       /* light gray */
+    color: rgb(136, 136, 136);              /* gray */
+}
+
+.msg_entry.questionanswer.local.noanswer p
+{
+    background-color: transparent;
+}
+
+</style>
+</head><body><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>There is quite a bit of echoing on the line. Maybe some people could mute themselves when they're not talking?</p></div><br><div class="msg_entry chat incoming to_all"><h1>Sebastian Karcher (an Alle):</h1><p><a href="http://www.zotero.org/support/translators">http://www.zotero.org/support/translators</a></p></div><br><div class="msg_entry chat incoming to_all"><h1>Philipp Zumstein (an Alle):</h1><p>It is useful to create a link to that translator folder.</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>People are comfortable with GitHub?</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>"creator": "Sebatian Karcher" --&gt; Sebastian</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>You could make a commit :)</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>(typo in the Demographic Research translator)</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>How about "browsersupport" and connectors?</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>Can you briefly discuss that?</p></div><br><div class="msg_entry chat incoming to_all"><h1>Sebastian Karcher (an Alle):</h1><p>will do</p></div><br><div class="msg_entry chat incoming to_all"><h1>Sebastian Karcher (an Alle):</h1><p><a href="https://github.com/adam3smith/webinar-translators/">https://github.com/adam3smith/webinar-translators/</a></p></div><br><div class="msg_entry chat incoming to_all"><h1>Philipp Zumstein (an Alle):</h1><p><a href="https://github.com/zotero/translators/pull/800">https://github.com/zotero/translators/pull/800</a></p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>(it's julien)</p></div><br><div class="msg_entry chat incoming to_all"><h1>Sebastien Dupre (an Alle):</h1><p>on t'entend Julien</p></div><br><div class="msg_entry chat incoming to_all"><h1>Philipp Zumstein (an Alle):</h1><p>Is it slowing down performance at some point? Checking detect etc.</p></div><br><div class="msg_entry chat incoming to_all"><h1>Philipp Zumstein (an Alle):</h1><p>Okay, thanks for the info</p></div><br><div class="msg_entry chat incoming to_all"><h1>Aurimas (an Alle):</h1><p>if you're writing a new one, it would be nice to pass it through jsbeautify</p></div><br><div class="msg_entry chat incoming to_all"><h1>Sebastian Karcher (an Alle):</h1><p><a href="http://jsbeautifier.org/">http://jsbeautifier.org/</a></p></div><br><div class="msg_entry chat incoming to_all"><h1>Aurimas (an Alle):</h1><p>And please link to some sample data if tests cannot be included</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>For paywall sites, do you usually check whether translators fail gracefully if the user doesn't have access?</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>Yup</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>Any size limit for attachments?</p></div><br><div class="msg_entry chat incoming to_all"><h1>Philipp Zumstein (an Alle):</h1><p>And the files are large...</p></div><br><div class="msg_entry chat incoming to_all"><h1>Philipp Zumstein (an Alle):</h1><p>e.g. 85 MB</p></div><br><div class="msg_entry chat incoming to_all"><h1>Aurimas (an Alle):</h1><p>I'd say ~10MB. We've really had to exclude attachments for legitimate data</p></div><br><div class="msg_entry chat incoming to_all"><h1>Aurimas (an Alle):</h1><p>rarely</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>Can you check for file size in the translator?</p></div><br><div class="msg_entry chat incoming to_all"><h1>Aurimas (an Alle):</h1><p>No</p></div><br><div class="msg_entry chat incoming to_all"><h1>Aurimas (an Alle):</h1><p>You can always link to the data</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p><a href="http://stackoverflow.com/questions/17416274/ajax-get-size-of-file-before-downloading">http://stackoverflow.com/questions/17416274/ajax-get-size-of-file-before-downloading</a> ?</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>(maybe a bit too off-topic)</p></div><br><div class="msg_entry chat incoming to_all"><h1>Aurimas (an Alle):</h1><p>Well, it's technically possible (we'll probably get HEAD requests in the future), but I think this is rarely an issue and most of the time it can be generalized for the whole site. Idk if it would be better to have inconsistent behavior.</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>Complaining with the website owners also works sometimes to get access to good metadata.</p></div><br><div class="msg_entry chat incoming to_all"><h1>Aurimas (an Alle):</h1><p>not sure if you talked about FirePath</p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>Connectors/browsersupport?</p></div><br><div class="msg_entry chat incoming to_all"><h1>Philipp Zumstein (an Alle):</h1><p>I find this very useful for starting:</p></div><br><div class="msg_entry chat incoming to_all"><h1>Philipp Zumstein (an Alle):</h1><p><a href="http://selectorgadget.com/">http://selectorgadget.com/</a></p></div><br><div class="msg_entry chat incoming to_all"><h1>Nathan Day (an Alle):</h1><p>Both Firefox and Chrome support $x(',,,') for debugging xpaths</p></div><br><div class="msg_entry chat incoming to_all"><h1>Nathan Day (an Alle):</h1><p>in the console</p></div><br><div class="msg_entry chat incoming to_all"><h1>Sebastian Karcher (an Alle):</h1><p><a href="https://addons.mozilla.org/en-US/firefox/addon/firepath/">https://addons.mozilla.org/en-US/firefox/addon/firepath/</a></p></div><br><div class="msg_entry chat incoming to_all"><h1>Rintze Zelle (an Alle):</h1><p>Thanks again!</p></div><br><div class="msg_entry chat incoming to_all"><h1>Sebastien Dupre (an Alle):</h1><p>Thanks a lot Sebastian!</p></div><br><div class="msg_entry chat incoming to_all"><h1>Philipp Zumstein (an Alle):</h1><p>Thank you very much!</p></div><br><div class="msg_entry chat incoming to_all"><h1>Sebastian Karcher (an Alle):</h1><p>Martin, Rintze--you want to stick around for 5mins about CSL?</p></div><br><div class="msg_entry chat incoming to_all"><h1>Nathan Day (an Alle):</h1><p>Thank you -- very informative!</p></div><br><div class="msg_entry chat incoming to_all"><h1>Aurimas (an Alle):</h1><p>Thanks Sebastian</p></div></body></html>
